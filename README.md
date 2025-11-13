@@ -51,3 +51,21 @@ Use DataRaptor Turbo Extract to fetch Case records and the following fields wher
 [Exercise4DRTE](force-app/main/default/omniDataTransforms/Exercise4DRTE_1.rpt-meta.xml) <br>
 <img src="image-5.png" alt="Exercise3DRTE" width="300">
 <img src="image-6.png" alt="Exercise3DRTE" width="300"> <hr>
+
+### Exercise 5 - Working with Complex Input JSON
+
+Modify the DataRaptor from Exercise #4 to take the following
+Input JSON:
+<pre>
+```json
+{
+  "accounts": {
+    "sections": {
+      "industry": "Banking"
+    }
+  }
+}
+</pre> ```
+[Exercise4DRTE](force-app/main/default/omniDataTransforms/Exercise4DRTE_1.rpt-meta.xml) <br>
+<img src="image-5.png" alt="Exercise3DRTE" width="300">
+<img src="image-6.png" alt="Exercise3DRTE" width="300"> <hr>
