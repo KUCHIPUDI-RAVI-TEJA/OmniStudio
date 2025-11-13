@@ -1,62 +1,90 @@
+Here’s a clean, readable version you can paste directly into your README.
+Formatting is consistent, spaced, and easy to scan.
+
+---
+
 # OmniStudio
-## DataRaptor (Mapper) Turbo Extract
-### Exercise 1 - Retrieve Fields From Case Record
 
-Use DataRaptor Turbo Extract to fetch Case records and the following fields
-•Id
-•Case Number
-•Description
-•Priority
-•Reason
-•Status
-•Subject
+## DataRaptor Turbo Extract Exercises
 
-[Exercise1DRTE](force-app/main/default/omniDataTransforms/RetrieveFieldsFromCaseRecordDRTE_1.rpt-meta.xml) <br>
-<img src="image-1.png" alt="Result - RetrieveFieldsFromCaseRecordDRTE" width="300"> <hr>
+---
 
-### Exercise 2 - Using Operators to fetch and sort Case Records
+## **Exercise 1 — Retrieve Fields From Case Record**
 
-Use DataRaptor Turbo Extract to fetch 3 Case records and the following fields and order the records by Case Number in descending order
-•Id
-•Case Number
-•Description
-•Priority
-•Reason
-•Status
-•Subject
+**Goal:** Use a DataRaptor Turbo Extract to fetch Case records with the following fields:
 
-[Exercise2DRTE](force-app/main/default/omniDataTransforms/UpdateOperatorsToFetchAndSortRecordsDRTE_1.rpt-meta.xml) <br>
-<img src="image-2.png" alt="Result - RetrieveFieldsFromCaseRecordDRTE" width="300"> <hr>
+* Id
+* Case Number
+* Description
+* Priority
+* Reason
+* Status
+* Subject
 
-### Exercise 3 - Using Variable to fetch Case Records and Relationship Notation as a Filter on associated Account Record
+**File:**
+`[RetrieveFieldsFromCaseRecordDRTE](force-app/main/default/omniDataTransforms/RetrieveFieldsFromCaseRecordDRTE_1.rpt-meta.xml)`
 
-Use DataRaptor Turbo Extract to fetch Case records and the following fields where the Industry field on Account Object is determined by a variable named accountindustry. Add key/value pair as the input parameter to test the DataRaptor.
-•Id
-•Case Number
-•Industry
+**Result:** <img src="image-1.png" width="300" />
 
-[Exercise3DRTE](force-app/main/default/omniDataTransforms/Exercise3DRTE_1.rpt-meta.xml) <br>
-<img src="image-3.png" alt="Exercise3DRTE" width="300">
-<img src="image-4.png" alt="Exercise3DRTE" width="300"> <hr>
+---
 
-### Exercise 4 - Fetch Case Records and Relationship Notation as a Filter on associated Account and Contact Record
+## **Exercise 2 — Use Operators to Fetch and Sort Case Records**
 
-Use DataRaptor Turbo Extract to fetch Case records and the following fields where the Industry field on Account Object is 'Manufacturing'
-•Id
-•Case Number
-•AccountNumber from Account Object
-•Industry from Account Object
-•Name from Contact Object
+**Goal:** Fetch **3 Case records**, return the fields below, and sort by **Case Number DESC**:
 
-[Exercise4DRTE](force-app/main/default/omniDataTransforms/Exercise4DRTE_1.rpt-meta.xml) <br>
-<img src="image-5.png" alt="Exercise3DRTE" width="300">
-<img src="image-6.png" alt="Exercise3DRTE" width="300"> <hr>
+* Id
+* Case Number
+* Description
+* Priority
+* Reason
+* Status
+* Subject
 
-### Exercise 5 - Working with Complex Input JSON
+**File:**
+`[UpdateOperatorsToFetchAndSortRecordsDRTE](force-app/main/default/omniDataTransforms/UpdateOperatorsToFetchAndSortRecordsDRTE_1.rpt-meta.xml)`
 
-Modify the DataRaptor from Exercise #4 to take the following
-Input JSON:
-<pre>
+**Result:** <img src="image-2.png" width="300" />
+
+---
+
+## **Exercise 3 — Use Variable and Relationship Notation for Filtering**
+
+**Goal:** Fetch Case records where the related **Account.Industry** matches a variable `accountindustry`.
+Return fields:
+
+* Id
+* Case Number
+* Industry
+
+**File:**
+`[Exercise3DRTE](force-app/main/default/omniDataTransforms/Exercise3DRTE_1.rpt-meta.xml)`
+
+**Result:** <img src="image-3.png" width="300" /> <img src="image-4.png" width="300" />
+
+---
+
+## **Exercise 4 — Use Relationship Filters on Account and Contact**
+
+**Goal:** Fetch Case records where **Account.Industry = 'Manufacturing'**.
+Return fields:
+
+* Id
+* Case Number
+* AccountNumber (Account)
+* Industry (Account)
+* Name (Contact)
+
+**File:**
+`[Exercise4DRTE](force-app/main/default/omniDataTransforms/Exercise4DRTE_1.rpt-meta.xml)`
+
+**Result:** <img src="image-5.png" width="300" /> <img src="image-6.png" width="300" />
+
+---
+
+## **Exercise 5 — Work With Complex Input JSON**
+
+**Goal:** Modify the DataRaptor from Exercise 4 to accept nested JSON input:
+
 ```json
 {
   "accounts": {
@@ -65,7 +93,9 @@ Input JSON:
     }
   }
 }
-</pre> ```
-[Exercise4DRTE](force-app/main/default/omniDataTransforms/Exercise4DRTE_1.rpt-meta.xml) <br>
-<img src="image-5.png" alt="Exercise3DRTE" width="300">
-<img src="image-6.png" alt="Exercise3DRTE" width="300"> <hr>
+```
+
+**File:**
+`[Exercise4DRTE](force-app/main/default/omniDataTransforms/Exercise4DRTE_1.rpt-meta.xml)`
+
+**Result:** <img src="image-5.png" width="300" /> <img src="image-6.png" width="300" />
