@@ -1,5 +1,5 @@
 # OmniStudio
 ## DataRaptor (Mapper) Turbo Extract
 ### Exercise 1 - Retrieve Fields From Case Record
-![RetrieveFieldsFromCaseRecordDRTE](RetrieveFieldsFromCaseRecordDRTE)
+![RetrieveFieldsFromCaseRecordDRTE](force-app/main/default/omniDataTransforms/RetrieveFieldsFromCaseRecordDRTE_1.rpt-meta.xml)
 ![Result - RetrieveFieldsFromCaseRecordDRTE](image-1.png)
