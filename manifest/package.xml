@@ -3,6 +3,7 @@
 	<types>
 		<members>Exercise3DRTE_1</members>
 		<members>Exercise4DRTE_1</members>
+		<members>Exercise5DRTE_1</members>
 		<members>RetrieveFieldsFromCaseRecordDRTE_1</members>
 		<members>UpdateOperatorsToFetchAndSortRecordsDRTE_1</members>
 		<name>OmniDataTransform</name>

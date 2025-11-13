@@ -10,6 +10,7 @@ Use DataRaptor Turbo Extract to fetch Case records and the following fields
 •Reason
 •Status
 •Subject
+HINT: If you’re using an environment variable as a Filter value, you must double-quote it. These variables are case-sensitive.
 
 [Exercise1DRTE](force-app/main/default/omniDataTransforms/RetrieveFieldsFromCaseRecordDRTE_1.rpt-meta.xml) <br>
 <img src="image-1.png" alt="Result - RetrieveFieldsFromCaseRecordDRTE" width="300"> <hr>
@@ -55,16 +56,33 @@ Use DataRaptor Turbo Extract to fetch Case records and the following fields wher
 ### Exercise 5 - Working with Complex Input JSON
 
 Modify the DataRaptor from Exercise #4 to take the following
+Hint: To Access JSOM Nodes We need to use : semi-colon
 Input JSON:
 <pre>
 {
   "accounts": {
     "sections": {
-      "industry": "Banking"
+      "industry": "Media"
     }
   }
 }
 </pre>
-[Exercise4DRTE](force-app/main/default/omniDataTransforms/Exercise4DRTE_1.rpt-meta.xml) <br>
-<img src="image-5.png" alt="Exercise3DRTE" width="300">
-<img src="image-6.png" alt="Exercise3DRTE" width="300"> <hr>
+[Exercise5DRTE](force-app/main/default/omniDataTransforms/Exercise5DRTE_1.rpt-meta.xml) <br>
+<img src="image-7.png" alt="Exercise3DRTE" width="300">
+<img src="image-8.png" alt="Exercise3DRTE" width="300"> <hr>
+
+
+## DataRaptor (Mapper) Extract
+## Exercise 1 - Using Operators to fetch and sort Case Records
+
+Use DataRapror Extract to fetch all Case records and the following fields and order the records by Case Number in descending order
+•Id
+•Case Number
+•Description
+•Priority
+•Reason
+•Status
+•Subject
+
+[Exercise1DRTE](force-app/main/default/omniDataTransforms/RetrieveFieldsFromCaseRecordDRTE_1.rpt-meta.xml) <br>
+<img src="image-1.png" alt="Result - RetrieveFieldsFromCaseRecordDRTE" width="300"> <hr>
