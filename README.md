@@ -13,7 +13,7 @@ Use DataRaptor Turbo Extract to fetch Case records and the following fields
 HINT: If you’re using an environment variable as a Filter value, you must double-quote it. These variables are case-sensitive.
 
 [Exercise1DRTE](force-app/main/default/omniDataTransforms/RetrieveFieldsFromCaseRecordDRTE_1.rpt-meta.xml) <br>
-<img src="image-1.png" alt="Result - RetrieveFieldsFromCaseRecordDRTE" width="300"> <hr>
+<img src="image-1.png" alt="Result - RetrieveFieldsFromCaseRecordDRTE" width="200"> <hr>
 
 ### Exercise 2 - Using Operators to fetch and sort Case Records
 
@@ -27,7 +27,7 @@ Use DataRaptor Turbo Extract to fetch 3 Case records and the following fields an
 •Subject
 
 [Exercise2DRTE](force-app/main/default/omniDataTransforms/UpdateOperatorsToFetchAndSortRecordsDRTE_1.rpt-meta.xml) <br>
-<img src="image-2.png" alt="Result - RetrieveFieldsFromCaseRecordDRTE" width="300"> <hr>
+<img src="image-2.png" alt="Result - RetrieveFieldsFromCaseRecordDRTE" width="200"> <hr>
 
 ### Exercise 3 - Using Variable to fetch Case Records and Relationship Notation as a Filter on associated Account Record
 
@@ -37,8 +37,8 @@ Use DataRaptor Turbo Extract to fetch Case records and the following fields wher
 •Industry
 
 [Exercise3DRTE](force-app/main/default/omniDataTransforms/Exercise3DRTE_1.rpt-meta.xml) <br>
-<img src="image-3.png" alt="Exercise3DRTE" width="300">
-<img src="image-4.png" alt="Exercise3DRTE" width="300"> <hr>
+<img src="image-3.png" alt="Exercise3DRTE" width="200">
+<img src="image-4.png" alt="Exercise3DRTE" width="200"> <hr>
 
 ### Exercise 4 - Fetch Case Records and Relationship Notation as a Filter on associated Account and Contact Record
 
@@ -50,8 +50,8 @@ Use DataRaptor Turbo Extract to fetch Case records and the following fields wher
 •Name from Contact Object
 
 [Exercise4DRTE](force-app/main/default/omniDataTransforms/Exercise4DRTE_1.rpt-meta.xml) <br>
-<img src="image-5.png" alt="Exercise3DRTE" width="300">
-<img src="image-6.png" alt="Exercise3DRTE" width="300"> <hr>
+<img src="image-5.png" alt="Exercise4DRTE" width="200">
+<img src="image-6.png" alt="Exercise4DRTE" width="200"> <hr>
 
 ### Exercise 5 - Working with Complex Input JSON
 
@@ -68,8 +68,8 @@ Input JSON:
 }
 </pre>
 [Exercise5DRTE](force-app/main/default/omniDataTransforms/Exercise5DRTE_1.rpt-meta.xml) <br>
-<img src="image-7.png" alt="Exercise3DRTE" width="300">
-<img src="image-8.png" alt="Exercise3DRTE" width="300"> <hr>
+<img src="image-7.png" alt="Exercise5DRTE" width="200">
+<img src="image-8.png" alt="Exercise5DRTE" width="200"> <hr>
 
 
 ## DataRaptor (Mapper) Extract
@@ -84,5 +84,7 @@ Use DataRapror Extract to fetch all Case records and the following fields and or
 •Status
 •Subject
 
-[Exercise1DRTE](force-app/main/default/omniDataTransforms/RetrieveFieldsFromCaseRecordDRTE_1.rpt-meta.xml) <br>
-<img src="image-1.png" alt="Result - RetrieveFieldsFromCaseRecordDRTE" width="300"> <hr>
+[Exercise1DRE](force-app/main/default/omniDataTransforms/Exercise1DRE_1.rpt-meta.xml) <br>
+<img src="image-9.png" alt="Result - Exercise1DRE" width="200"> 
+<img src="image-10.png" alt="Result - Exercise1DRE" width="200"> 
+<img src="image-11.png" alt="Result - Exercise1DRE" width="200"> <hr>
