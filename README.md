@@ -132,3 +132,131 @@ With Filter <br>
 <img src="image-22.png" alt="Result - Exercise3DRE" width="200"> 
 <img src="image-23.png" alt="Result - Exercise3DRE" width="200"> 
 <img src="image-24.png" alt="Result - Exercise3DRE" width="200"> <hr>
+
+
+## Exercise 4 - Working with complex JSON
+
+Modify the DataRaptor from Exercise #3 to take the following
+Hint: To Access JSOM Nodes We need to use : semi-colon
+Input JSON:
+<pre>
+{
+  "accounts": {
+    "sections": {
+      "industry": "Media"
+    }
+  }
+}
+</pre>
+
+[Exercise4DRE](force-app/main/default/omniDataTransforms/Exercise2DRE_1.rpt-meta.xml) <br>
+<img src="image-25.png" alt="Result - Exercise4DRE" width="200"> 
+<img src="image-26.png" alt="Result - Exercise4DRE" width="200"> 
+<img src="image-27.png" alt="Result - Exercise4DRE" width="200"> <hr>
+
+
+## DataRaptor (Mapper) Load
+### Exercise 1 - Insert Multiple Records for a Single Object
+
+Design a DataRaptor Load that can create the items shown in the below JSON
+<pre>
+{
+  "accounts": [
+    {
+      "name": "Test Account 1"
+    },
+    {
+      "name": "Test Account 2"
+    },
+    {
+      "name": "Test Account 3"
+    }
+  ]
+}
+</pre>
+
+[Exercise1DRL](force-app/main/default/omniDataTransforms/RetrieveFieldsFromCaseRecordDRTE_1.rpt-meta.xml) <br>
+<img src="image-28.png" alt="Result - Exercise1DRL" width="200"> 
+<img src="image-29.png" alt="Result - Exercise1DRL" width="200"> 
+<img src="image-30.png" alt="Result - Exercise1DRL" width="200"> <hr>
+
+### Exercise 2 - Insert Multiple Parent Records with Multiple Child Records
+
+Design a DataRaptor Load that can create the items shown in the below JSON and ensure the case is associated with the contact.
+NOTE: Everytime link parents from Childs
+<pre>
+{
+  "cases": [
+    {
+      "subject": "Broken Engine",
+      "contact": {
+        "lastName": "Bryant"
+      }
+    },
+    {
+      "subject": "Broken Seatbelt",
+      "contact": {
+        "lastName": "Kobe"
+      }
+    }
+  ]
+}
+
+</pre>
+
+[Exercise1DRL](force-app/main/default/omniDataTransforms/RetrieveFieldsFromCaseRecordDRTE_1.rpt-meta.xml) <br>
+<img src="image-31.png" alt="Result - Exercise1DRL" width="200"> 
+<img src="image-32.png" alt="Result - Exercise1DRL" width="200"> 
+<img src="image-33.png" alt="Result - Exercise1DRL" width="200"> <hr>
+
+### Exercise 3 - Insert a single Object record linked in Multiple Object Hierarchies
+
+Design a DataRaptor Load that can insert a case record. This case record should be linked to a contact record, which in turn is connected to an Account record. Come up with your own test Input JSON.
+<pre>
+{
+  "cases": [
+    {
+      "subject": "Broken Engine",
+      "contact": {
+        "lastName": "Bryant",
+        "account": {
+          "name": "Bryant Account"
+        }
+      }
+    }
+  ]
+}
+</pre>
+
+[Exercise1DRL](force-app/main/default/omniDataTransforms/RetrieveFieldsFromCaseRecordDRTE_1.rpt-meta.xml) <br>
+<img src="image-35.png" alt="Result - Exercise1DRL" width="200"> 
+<img src="image-36.png" alt="Result - Exercise1DRL" width="200"> 
+<img src="image-34.png" alt="Result - Exercise1DRL" width="200"> <hr>
+
+### Exercise 3 - Insert a single Object record linked in Multiple Object Hierarchies
+
+Design a DataRaptor Load that can insert a case record. This case record should be linked to a contact record, which in turn is connected to an Account record. Come up with your own test Input JSON.
+<pre>
+{
+  "cases": [
+    {
+      "subject": "Broken Engine",
+      "contact": {
+        "lastName": "Bryant"
+      }
+    },
+    {
+      "subject": "Broken Seatbelt",
+      "contact": {
+        "lastName": "Kobe"
+      }
+    }
+  ]
+}
+
+</pre>
+
+[Exercise1DRL](force-app/main/default/omniDataTransforms/RetrieveFieldsFromCaseRecordDRTE_1.rpt-meta.xml) <br>
+<img src="image-35.png" alt="Result - Exercise1DRL" width="200"> 
+<img src="image-36.png" alt="Result - Exercise1DRL" width="200"> 
+<img src="image-34.png" alt="Result - Exercise1DRL" width="200"> <hr>
