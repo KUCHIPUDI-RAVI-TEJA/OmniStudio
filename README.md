@@ -123,12 +123,12 @@ Disadvantage: 3 Separate Queries will run
 2. Single Extract Step (Extract Case, Account, Contact At Onece)
 Advantage: Single Query
 
-[Exercise3DRE](force-app/main/default/omniDataTransforms/Exercise3InSingleExtractStepDRE_1.rpt-meta.xml) <br>
+[Exercise3InSingleExtractStepDRE](force-app/main/default/omniDataTransforms/Exercise3InSingleExtractStepDRE_1.rpt-meta.xml) <br>
 <img src="image-19.png" alt="Result - Exercise3DRE" width="200"> 
 <img src="image-20.png" alt="Result - Exercise3DRE" width="200"> 
 <img src="image-21.png" alt="Result - Exercise3DRE" width="200"> <hr>
 
-With Filter
+With Filter <br>
 <img src="image-22.png" alt="Result - Exercise3DRE" width="200"> 
 <img src="image-23.png" alt="Result - Exercise3DRE" width="200"> 
 <img src="image-24.png" alt="Result - Exercise3DRE" width="200"> <hr>
