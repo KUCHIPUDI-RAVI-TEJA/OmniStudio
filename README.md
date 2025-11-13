@@ -88,3 +88,47 @@ Use DataRapror Extract to fetch all Case records and the following fields and or
 <img src="image-9.png" alt="Result - Exercise1DRE" width="200"> 
 <img src="image-10.png" alt="Result - Exercise1DRE" width="200"> 
 <img src="image-11.png" alt="Result - Exercise1DRE" width="200"> <hr>
+
+## Exercise 2 - Use Formula to manipulate data
+
+Use DataRaptor Extract to fetch all Case records and the following fields and order the records by Case Number in descending order. Use the formula function to append Case Number with Priority. 
+For example: 004424 - High
+•Id
+•Case Number
+•Description
+•Priority
+
+[Exercise2DRE](force-app/main/default/omniDataTransforms/Exercise2DRE_1.rpt-meta.xml) <br>
+<img src="image-12.png" alt="Result - Exercise2DRE" width="200"> 
+<img src="image-13.png" alt="Result - Exercise2DRE" width="200"> 
+<img src="image-14.png" alt="Result - Exercise2DRE" width="200"> <hr>
+
+## Exercise 3 - Use Relationship Notation and Single Extract Step
+
+Use DataRaptor Extract to fetch all Case records and the following fields where the Industry field on the associated Account = Electronics. 
+Use Relationship Notation and single Extract Step.
+•Id
+•Case Number
+•Industry from Account Object
+•Name from Contact Object
+
+1. Multi Extract Step (Extract Case, Account, Contact Separately)
+Disadvantage: 3 Separate Queries will run
+
+[Exercise3DRE](force-app/main/default/omniDataTransforms/Exercise3DRE_1.rpt-meta.xml) <br>
+<img src="image-16.png" alt="Result - Exercise3DRE" width="200"> 
+<img src="image-17.png" alt="Result - Exercise3DRE" width="200"> 
+<img src="image-18.png" alt="Result - Exercise3DRE" width="200"> <hr>
+
+2. Single Extract Step (Extract Case, Account, Contact At Onece)
+Advantage: Single Query
+
+[Exercise3DRE](force-app/main/default/omniDataTransforms/Exercise3InSingleExtractStepDRE_1.rpt-meta.xml) <br>
+<img src="image-19.png" alt="Result - Exercise3DRE" width="200"> 
+<img src="image-20.png" alt="Result - Exercise3DRE" width="200"> 
+<img src="image-21.png" alt="Result - Exercise3DRE" width="200"> <hr>
+
+With Filter
+<img src="image-22.png" alt="Result - Exercise3DRE" width="200"> 
+<img src="image-23.png" alt="Result - Exercise3DRE" width="200"> 
+<img src="image-24.png" alt="Result - Exercise3DRE" width="200"> <hr>

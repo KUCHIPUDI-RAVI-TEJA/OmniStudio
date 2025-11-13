@@ -2,7 +2,10 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
 		<members>Exercise1DRE_1</members>
+		<members>Exercise2DRE_1</members>
+		<members>Exercise3DRE_1</members>
 		<members>Exercise3DRTE_1</members>
+		<members>Exercise3InSingleExtractStepDRE_1</members>
 		<members>Exercise4DRTE_1</members>
 		<members>Exercise5DRTE_1</members>
 		<members>RetrieveFieldsFromCaseRecordDRTE_1</members>
