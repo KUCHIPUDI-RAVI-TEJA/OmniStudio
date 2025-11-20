@@ -260,3 +260,73 @@ Design a DataRaptor Load that can insert a case record. This case record should 
 <img src="image-35.png" alt="Result - Exercise1DRL" width="200"> 
 <img src="image-36.png" alt="Result - Exercise1DRL" width="200"> 
 <img src="image-34.png" alt="Result - Exercise1DRL" width="200"> <hr>
+
+### Exercise 4 - Insert multiple Object records linked in Multiple Object Hierarchies
+
+Use the same DataRaptor Load from Challenge #3 but modify the test input JSON so that you can create multiple case records, multiple account records, and multiple contact records.
+<pre>
+{
+  "cases": [
+    {
+      "subject": "Broken Engine a",
+      "contact": {
+        "lastName": "Bryant a",
+        "account": {
+          "name": "Bryant Account a"
+        }
+      }
+    },
+    {
+      "subject": "Broken Engine b",
+      "contact": {
+        "lastName": "Bryant b",
+        "account": {
+          "name": "Bryant Account b"
+        }
+      }
+    },
+    {
+      "subject": "Broken Engine c",
+      "contact": {
+        "lastName": "Bryant c",
+        "account": {
+          "name": "Bryant Account c"
+        }
+      }
+    }
+  ]
+}
+
+</pre>
+
+[Exercise1DRL](force-app/main/default/omniDataTransforms/RetrieveFieldsFromCaseRecordDRTE_1.rpt-meta.xml) <br>
+<img src="image-37.png" alt="Result - Exercise1DRL" width="200">  <hr>
+
+
+### Exercise 5 - Upsert Records using recordId
+
+Design a DataRaptor Load that can update the subject field of the Case object when provided with a record Id. When a record Id is not provided, create a new Case record. Design your own test input JSON.
+<pre>
+{
+  "cases": [
+    {
+      "subject": "Broken Engine",
+      "contact": {
+        "lastName": "Bryant"
+      }
+    },
+    {
+      "subject": "Broken Seatbelt",
+      "contact": {
+        "lastName": "Kobe"
+      }
+    }
+  ]
+}
+
+</pre>
+
+[Exercise1DRL](force-app/main/default/omniDataTransforms/RetrieveFieldsFromCaseRecordDRTE_1.rpt-meta.xml) <br>
+<img src="image-35.png" alt="Result - Exercise1DRL" width="200"> 
+<img src="image-36.png" alt="Result - Exercise1DRL" width="200"> 
+<img src="image-34.png" alt="Result - Exercise1DRL" width="200"> <hr>
