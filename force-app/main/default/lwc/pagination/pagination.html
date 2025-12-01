@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Account List">
+        <div slot="actions">
+
+        </div>
+        <div slot="body">
+            <template if:true={accounts}>
+                <template for:each={accounts} for:item="account">
+                    <p key={account.Id}>{account.Name}</p>
+                </template>
+            </template>
+        </div>
+        <div slot="footer">
+
+        </div>
+    </lightning-card>
+</template>
